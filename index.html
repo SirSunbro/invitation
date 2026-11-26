@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Letter</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+</head>
+<body class="locked">
+    <div class="entry-screen" id="entryScreen">
+        <div class="entry-card">
+            <div class="entry-decoration">✦</div>
+
+            <p class="entry-subtitle">A PERSONAL INVITATION</p>
+
+            <h1>Особенное приглашение</h1>
+
+            <p class="entry-description">
+                Для вас приготовлено личное послание.
+                Введите код, чтобы открыть его.
+            </p>
+
+            <form id="codeForm" class="code-form">
+                <input type="text"
+                       id="inviteCode"
+                       placeholder="Введите ваш код"
+                       maxlength="6"
+                       autocomplete="off"
+                       required>
+
+                <button type="submit">
+                    Открыть приглашение
+                </button>
+            </form>
+
+            <p class="entry-error" id="entryError"></p>
+
+            <div class="entry-footer">MADE ESPECIALLY FOR YOU</div>
+        </div>
+    </div>
+    <main>
+        <section class="intro">
+            <div class="hint">Прокрути вниз, чтобы открыть письмо</div>
+
+            <div class="scene">
+                <div class="envelope">
+
+                    <div class="envelope-back"></div>
+
+
+                    <div class="letter-layer">
+                        <div class="letter">
+                            <img src="images/letters/letter-01.png"
+                                 alt="Персональное приглашение"
+                                 class="letter-image"
+                                 id="personalLetter">
+                        </div>
+                    </div>
+
+
+                    <div class="envelope-flap"></div>
+
+                    <div class="envelope-front"></div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script src="data/invitations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
